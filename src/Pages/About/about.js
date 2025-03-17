@@ -15,8 +15,7 @@ const About = () => {
     <div className="about-container">
       <h1>About Me</h1>
       <p className="about-description">
-        I am a passionate web developer focused on building responsive, user-friendly, and efficient websites and applications.
-        I love solving real-world problems, learning new technologies, and creating solutions that make a difference.
+      I am a web developer focused on creating responsive and efficient websites and web apps. I enjoy solving problems, working on both front-end and back-end, and continuously learning new technologies.
       </p>
 
       <h2>My Skills</h2>

@@ -6,7 +6,7 @@ import './sidebar.css';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2 className="logo">MyPortfolio</h2>
+      <h2 className="logo">Dave</h2>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Me</Link></li>
