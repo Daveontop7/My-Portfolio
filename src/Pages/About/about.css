@@ -1,0 +1,131 @@
+.about-container {  
+    padding: 40px;
+    margin-left: 20px;
+    color: #333;
+}
+  
+.about-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: teal;
+    padding-left: 400px; /* This will be adjusted in media query */
+}
+  
+.about-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 120px; /* This will be adjusted in media query */
+    line-height: 1.8;
+}
+  
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+/* Hover effect */
+.skill-item:hover {
+    transform: translateY(-8px);
+}
+  
+.skill-item:hover .skill-icon,
+.skill-item:hover p {
+    color: teal;
+}
+  
+.skill-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+  
+/* Optional: Initial icon colors */
+.skill-icon.html {
+    color: #e34c26;
+}
+  
+.skill-icon.css {
+    color: #264de4;
+}
+  
+.skill-icon.javascript {
+    color: #f0db4f;
+}
+  
+.skill-icon.bootstrap {
+    color: #563d7c;
+}
+  
+.skill-icon.react {
+    color: #61dafb;
+}
+  
+.skill-icon.capcut {
+    color: #000;
+}
+  
+.skill-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* ========= RESPONSIVENESS ========== */
+@media (max-width: 768px) {
+    .about-container {
+        margin-left: 0; /* Remove left margin */
+        padding: 20px; /* Adjust padding */
+        text-align: center;
+    }
+
+    .about-container h1 {
+        font-size: 28px; 
+        padding-left: 0; /* Remove fixed padding */
+        text-align: center;
+    }
+
+    .about-description {
+        padding-left: 0; /* Remove fixed padding */
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills in a single column */
+    }
+}
