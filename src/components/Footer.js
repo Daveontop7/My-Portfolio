@@ -8,7 +8,6 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Dave. All rights reserved.</p>
       <div className="social-links">
         <a href="https://github.com/Daveontop7" target="_blank" rel="noopener noreferrer">
           <GitHubIcon fontSize="medium" />
@@ -20,6 +19,7 @@ const Footer = () => {
           <WhatsAppIcon fontSize="medium" />
         </a>
       </div>
+      <p>&copy; {new Date().getFullYear()} Dave. All rights reserved.</p>
     </footer>
   );
 };

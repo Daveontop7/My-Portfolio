@@ -23,8 +23,8 @@ const Home = () => {
         <a href="https://www.linkedin.com/in/david-george-30998b349/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon fontSize="medium" />
         </a>
-        <a href="https://wa.me/09027235106">
-          <WhatsAppIcon fontSize="medium" />
+        <a href="https://wa.link/02y7sw" target="_blank" rel="noopener noreferrer">
+          <WhatsAppIcon fontSize="medium"/>
           </a>
       </div>
     </div>
